@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eternal Fire</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul class="pages">
+            <li class="login page">
+                <div class="form">
+                    <h3 class="title">Kullanıcı bilgilerinizi doldurunuz. Resim opsiyoneldir.</h3>
+                    <input class="username input" type="text" maxlength="16" />
+                    <div class="image input button wrapper">
+                        <button class="image upload button">Profil resminizi yükleyin</button>
+                        <input class="userimage input" type='file' />
+                    </div>
+                    <br><img id="userImage" class="image window" src="#" height=128 width=128>
+                </div>
+            </li>
+            <li class="chat page">
+                <div class="public chat screen">
+                    <div class="chatArea">
+                        <ul class="messages"></ul>
+                    </div>
+                    <div class="users list">
+                        <ul class="users"></ul>
+                    </div>
+                    <div class="button group">
+                        <td>Kullaniciya özel sohbet isteği yollayın</td>
+                        <td>Kullanici adi: </td>
+                        <input class="private request input" type="text" maxlength="16" />
+                        <button class="send button">Connect</button>
+                        <button class="exit button">Exit chat</button>
+                        <button class="logout button">Logout chat</button>
+                    </div>
+                </div>
+                <input class="inputMessage" placeholder="Type here..."/>
+            </li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/client.js"></script>
+    </body>
+</html>
